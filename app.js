@@ -1,4 +1,5 @@
-import {GlowParticle} from './glowparticle.js'
+/*jshint esversion: 8 */
+import {GlowParticle} from './glowparticle.js';
 
 const COLORS = [
   {r: 45, g:45, b:227}, //blue
@@ -6,7 +7,7 @@ const COLORS = [
   {r: 255, g:104, b:248}, //purple
   {r: 44, g:209, b:252}, //skyblue
   {r: 54, g:233, b:84}, //green
-]
+];
 
 class App {
     constructor() {
@@ -21,7 +22,7 @@ class App {
       this.maxRadius = 900;
       this.minRadius = 400;
 
-      window.addEventListener('resize', this.resize.bind(this), false)
+      window.addEventListener('resize', this.resize.bind(this), false);
       this.resize();
 
       window.requestAnimationFrame(this.animate.bind(this));
@@ -45,7 +46,7 @@ class App {
 
     for (let i = 0; i < this.totalParticles; i++) {
       const item = new GlowParticle(
-        Math.random() * this.stageWidth
+        Math.random() * this.stageWidth,
         Math.random() * this.stageHeight,
         Math.random() *
           (this.maxRadius - this.minRadius) + this.minRadius,
@@ -74,4 +75,4 @@ class App {
 }
 window.onload = () => {
   new App();
-}
+};

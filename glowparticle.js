@@ -1,3 +1,4 @@
+/*jshint esversion: 8 */
 const PI2 = Math.PI * 2;
 
 export class GlowParticle {
