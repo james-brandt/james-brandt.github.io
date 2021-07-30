@@ -20,5 +20,11 @@ body{
   color: #333;
   background: #000;
   background-image: var(--gradient);
-  background-size: 100%;
+  background-size: 300%;
+  animation: bg-animation 5s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
 }
