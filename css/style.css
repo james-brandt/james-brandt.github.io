@@ -3,18 +3,16 @@
   45deg,
   #ffae00,
   #216BE7,
-  #bb2d9c,
+  #000000,
   #4569A4,
   #235eb6
   );
 }
 
 body{
-  font-family: basic sans, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 1.125em;
   line-height: 1.6;
   color: #333;
@@ -22,6 +20,15 @@ body{
   background-image: var(--gradient);
   background-size: 300%;
   animation: bg-animation 5s infinite alternate;
+}
+#Name{
+    font-family: Arial, Helvetica, sans-serif;
+    position:absolute;
+    top:000px;
+    left:00px;
+    width: 100%;
+    color: #000;
+    background-color:#216BE7;
 }
 
 @keyframes bg-animation {
