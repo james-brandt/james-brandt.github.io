@@ -14,15 +14,14 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;}
-    
+
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     overflow-x: hidden; 
     min-height: 100vh;
-    min-height: -webkit-fill-available;
-    height: -webkit-fill-available;
+
     background-image: var(--gradient);
     background-size: 300%;
     animation: bg-animation 5s infinite alternate;}
