@@ -20,5 +20,5 @@ body{
   color: #333;
   background: #000;
   background-image: var(--gradient);
-  background-size: 400%;
+  background-size: 100%;
 }
