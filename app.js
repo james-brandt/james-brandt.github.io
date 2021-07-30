@@ -1,5 +1,5 @@
 /*jshint esversion: 8 */
-import {GlowParticle} from './glowparticle.js';
+const {GlowParticle} = './glowparticle.js';
 
 const COLORS = [
   {r: 45, g:45, b:227}, //blue
@@ -74,5 +74,5 @@ class App {
   }
 }
 window.onload = () => {
-  new App();
+  new App(); // eslint-disable-line no-new
 };
