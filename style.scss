@@ -1,27 +1,24 @@
-* {
-  outline: 0;
-  margin: 0;
-  padding: 0;
+:root {
+  --gradient: linear-gradient(
+  45deg,
+  #0060FF,
+  #216BE7,
+  #2D62BB,
+  #4569A4,
+  #4C5D77
+  );
 }
 
-html {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  font-family: basic=sans, san-serif;
+body{
+  font-family: basic sans, sans-serif;
   min-height: 100vh;
   display: flex;
-  justify-content:center;
+  justify-content: center;
+  align-items: center;
   font-size: 1.125em;
   line-height: 1.6;
   color: #333;
-  background: #ddd;
-  background-image: linear-gradient(45deg, red, blue);
-}
-
-canvas {
-  width: 100%;
-  height: 100%;
+  background: #000;
+  background-image: var(--gradient);
+  background-size: 400%;
 }
