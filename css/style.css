@@ -53,6 +53,7 @@ header{
     margin: 5vh}
 .logo {
     position: relative;
+    left: 0%;
     top: 0vh;
     max-height: 20vh;
     max-width: auto;}
