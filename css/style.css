@@ -22,6 +22,7 @@ body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
+    padding-bottom: 30vh;
     overflow-x: hidden; 
     min-height: 100vh;
     background-image: var(--gradient);
@@ -66,7 +67,8 @@ header{
 nav ul {
     margin: 0;
     padding 0;
-    list-style: none;}
+    list-style: none;
+float: right;}
 nav li {
     padding-top: 0em;
     float: right;
@@ -77,13 +79,14 @@ nav a {
     text-transform: uppercase;
     font-size: .9rem;
     color: white;
-    padding: .02em;}
+    padding: .02em;
+float: right;}
 nav a:hover {
     color: rgba(0,0,0,0.1);}
 @media (min-width:60rem) {
     nav {
         float: right;
-        padding-top:0px}}
+        padding-top:0px;}}
     /* intro */
 .home-intro {
     color: #fff;}
@@ -93,48 +96,31 @@ nav a:hover {
         padding-top:30vh}}
     /*bio*/
 .home-about-box {
+    padding-top: 10vh;
+    overflow: auto;
     background-color: rgb(255,255,255,0.09);
-    padding-top:.5em;
-    padding: 5%;
-    width: 50vw;
-    margin-left: -2.5%;
+    color: white;
+    padding: 3%;
+    width: 80vw;
+    margin-left: 25%;
     border-radius: 30px;
     border-color: white;
     position: relative;
-    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.123);
-}
+    line-height: 1.6em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.123)
+    }
 .home-about-box h1 {
     color:#fff;
- 
 }
 @media (min-width:0rem) {
     h1 {
-        font-size: 2.3rem;}
+        font-size: 2.5rem;}
     .home-about-box h1{
         padding-top: 1vh;
-        height: 10vh;}
-/*portfolio*/
-.portfolio{ 
-    background-color: rgb(255,255,255,0.09);
-    padding-top:.5em;
-    padding: 5%;
-    width: 50vw;
-    margin-left: -2.5%;
-    border-radius: 30px;
-    border-color: white;
-    position: relative;
-    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.123);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+        height: 5vh;
+    }
+@media (min-width:20rem) {
+    .home-about-box {
+        max-height: 70vh;
+        max-width: 50vw;
+    }
