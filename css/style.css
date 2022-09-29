@@ -7,6 +7,7 @@
   #b1640d,
   #235eb6
   );
+    height: 100vh;
 }
 @keyframes bg-animation {
     0% {background-position: left;}
@@ -16,7 +17,7 @@
     scroll-behavior: smooth;}
 img {
     max-width: 100%;
-    height: auto;
+    height: 100vh;
 }
 body{
     margin: 0;
@@ -24,7 +25,7 @@ body{
     padding: 0;
     padding-bottom: 30vh;
     overflow-x: hidden; 
-    min-height: 100vh;
+    max-height: 100vh;
     background-image: var(--gradient);
     background-size: 300%;
     animation: bg-animation 20s infinite alternate;}
@@ -51,24 +52,8 @@ header{
     left: 0;
     right: 0;
     margin: 5vh}
-.logo {
-    position: relative;
-    left: 0%;
-    top: 0vh;
-    max-height: 20vh;
-    max-width: auto;}
+
 @media (min-width:0rem) {
-    .logo {
-        float: left;
-        padding-top:10px;}}
-.logo:hover {
-        animation-name: rotate; 
-        animation-duration: 10s; 
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;}
-    @keyframes rotate {
-        from {transform: rotate(0deg);}
-        to {transform: rotate(360deg);}}
 nav ul {
     margin: 0;
     padding 0;
